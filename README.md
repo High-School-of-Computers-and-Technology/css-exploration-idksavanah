@@ -1,6 +1,46 @@
-Please create an index.html file and a style.css file after opening a codespace enviroment. Use the table below to make each reference 
+Please create an index.html file and a style.css file after opening a codespace enviroment. Link your stylesheet using the instructions below then use the table below to make each reference
 
 ---
+
+To link a CSS stylesheet to an HTML file, follow these steps:
+
+1. **Create the CSS File**:
+   - Write your CSS code in a file with the extension `.css` (e.g., `styles.css`).
+
+2. **Link the CSS File in HTML**:
+   - In your HTML document, add a `<link>` tag inside the `<head>` section to connect your CSS file.
+   - The `<link>` tag should look like this:
+
+     ```html
+     <link rel="stylesheet" href="styles.css">
+     ```
+
+   - Here’s what each part of this line means:
+     - `rel="stylesheet"` tells the browser that this link is for a stylesheet.
+     - `href="styles.css"` provides the path to your CSS file. Replace `"styles.css"` with the correct path if your CSS file is in a different folder (e.g., `"css/styles.css"` if it’s inside a folder named `css`).
+
+3. **Example HTML Structure**:
+
+   ```html
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>My Web Page</title>
+     <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+     <h1>Welcome to My Web Page</h1>
+     <p>This page is styled using an external CSS file.</p>
+   </body>
+   </html>
+   ```
+---
+4. **Check the Link**:
+   - After linking, check your HTML file in a browser to make sure the CSS styles are applied correctly. If they’re not showing, double-check the `href` path to ensure it matches the location of your CSS file.
+
+This approach keeps your CSS code separate from HTML, which is best practice for organizing and maintaining your code.
 Here's a table that outlines how to create **classes**, **IDs**, and **elements** in HTML, along with how to reference each in CSS.
 
 | **Selector Type** | **HTML Code Example** | **CSS Code Example** | **Description** |
